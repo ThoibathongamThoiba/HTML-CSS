@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+        h1::before {
+            content: "Hii! ";
+            color:gold;
+            font-size: 1em;
+        }
+
+        h1::after {
+            content: " ✨🎈";
+            color: gold;
+            font-size: 1.2em;
+        }
+        p::first-line {
+            font-weight: bold;
+            color: #2a7ae2;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: #e95f0a;
+            float: left;
+            margin-right: 6px;
+            line-height:1;
+        }
+        ul li::before {
+            content: "✔ ";
+            color:rgb(92, 171, 92);}
+          a:hover {
+            color: red;
+          }
+          a:visited{
+            color: palevioletred;
+          }
+          button:active{
+            background-color: aquamarine;
+            color: #f9f9f9;
+          }
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements in CSS</h1>
+    <a href="#">Hover over the link</a>
+    <p>
+        Pseudo elements allow you to style specific parts of an element, such as the first line or first letter. They are very useful for advanced typography and UI effects.
+    </p>
+    <button>Click Me!</button>
+    <br />
+    <h2>Examples</h2>
+    <ul>
+        <li>First line and first letter styling</li>
+        <li>Adding icons or symbols before/after content</li>
+        <li>Customizing placeholder text</li>
+        <li>Highlighting text selection</li>
+        </ul>
+</body>
+</html>

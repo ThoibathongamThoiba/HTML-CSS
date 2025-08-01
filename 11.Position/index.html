@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position Example</title>
+    <style>
+        .container {
+            position: relative;
+            width: 450px;
+            height: 400px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 40px auto;
+            top:20px;
+            right: 20px;
+        }
+        .static-box {
+            position: static;
+            background: #ffccbc;
+            padding: 10px;
+            margin: 10px;
+            top: 20px;
+        }
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            background: #cfb998;
+            padding: 10px;
+            margin: 10px;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 140px;
+            right: 20px;
+            background: #ffb3b3;
+            padding: 10px;
+            height: 20px;
+            margin-bottom: 40px;
+        }
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            
+            background: #b3ffb3;
+            padding: 10px;
+        }
+        .sticky-box {
+            position: sticky;
+            top:200px;
+            left:290px;
+            background: #e0b3ff;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Examples</h1>
+    <div class="container">
+        <div class="static-box">Static Position (default)</div>
+        <div class="relative-box">Relative Position (offset from normal)</div>
+       <div class="absolute-container">
+        <div class="absolute-box">Absolute Position (absolutely positioninside box)</div>
+        </div>
+        <div class="sticky-box">Sticky Position (scroll to see effect)</div>
+
+        
+    </div>
+    <div style="height: 1000px;"></div>
+    <div class="fixed-box">Fixed Position (button right)</div>
+</body>
+</html>

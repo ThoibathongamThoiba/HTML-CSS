@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Icons Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;}
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .icon-item {
+            text-align: center;
+        }
+        .icon-item i {
+            font-size: 2.5rem;
+            color: #0078d7;
+            margin-bottom: 0.5rem;
+        }
+        .icon-label {
+            display: block;
+            margin-top: 0.5rem;
+            color: #333;
+            font-size: 1rem;
+        }
+        h1{
+            color: #062e4f;
+            text-align: center;
+        }
+        h2{
+            color: #062e4f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Icons Gallery</h1>
+       <h2> <p>Popular Icons are following:</p></h2>
+    </header>
+    <section class="icon-grid">
+        <div class="icon-item">
+            <i class="fas fa-home"></i>
+            <span class="icon-label">Home</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-user"></i>
+            <span class="icon-label">User</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-envelope"></i>
+            <span class="icon-label">Mail</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-cog"></i>
+            <span class="icon-label">Settings</span>
+        </div>
+        
+        <div class="icon-item">
+            <i class="fas fa-search"></i>
+            <span class="icon-label">Search</span>
+        </div>
+    
+    </section>
+</body>
+</html>

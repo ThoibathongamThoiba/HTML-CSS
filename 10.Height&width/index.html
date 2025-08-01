@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height And Width</title>
+    <style>
+        .fixed-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 2px solid #333;
+        }
+
+        .percent-box {
+            width: 50%;
+            height: 80px;
+            background-color: lightgreen;
+            border: 2px solid #333;
+            margin-top: 10px;
+        }
+
+        .veiwport-box {
+            width: 60vw;
+            height: 20vh;
+            background-color: lightcoral;
+            border: 2px solid;
+            margin-top: 10px;
+        }
+
+        .limited-box {
+            width: 500px;
+            max-width: 90%;
+            min-height: 100px;
+            overflow: auto;
+            background-color: rgb(111, 111, 203);
+ border:2px solid ;
+ margin-top: 10px;
+        }
+    </style>
+    </style>
+
+</head>
+<body>
+    <h1>Height And Width Examples</h1>
+
+    <div class="fixed-box">Fixed Dimension (px)</div>
+    <div class="percent-box">Relative Dimension (%)</div>
+    <div class="veiwport-box">Veiwport units (</div>
+<div class="limited-box">Thia box has max. width and min-height.Try resizing the browser window to see the effect</div>
+</body>
+</html>

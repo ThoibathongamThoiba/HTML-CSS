@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination </title>
+    <style>
+        .pagination{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .pagination li{
+            margin: 0 5px;
+        }
+        .pagination a {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            background-color: #f1f1f1;
+            color: #444040;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .pagination a:hover {
+            background-color: #007bff;
+            color: #8e8888;
+        }
+        .pagination .active a {
+            background-color: #33659b;
+            color: rgb(242, 246, 250);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagination Example</h1>
+    <ul class="pagination Exmple">     
+          <li><a href="#">pre</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#"></a>2</li>
+            <li><a href="#"></a>3</li>
+            <li><a href="#"></a>4</li>
+            <li><a href="#"></a>5</li>
+            <li><a href="#">nex</a></li>
+        </ul>
+
+
+</body>
+</html>

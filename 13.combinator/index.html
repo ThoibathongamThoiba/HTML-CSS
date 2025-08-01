@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators Demo</title>
+    <style>
+        div p{
+            color: #042d63;
+        }
+
+        div > p {
+            font-weight: bold;
+        }
+        p{
+            color: #2a7ae2;
+        }
+        h2 ~ p {
+            background-color: rgb(222, 216, 216);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+        section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            margin-bottom: 32px;
+            padding: 24px;
+        }
+        h2 {
+            color: #2a7ae2;
+        }
+         
+        h1 {
+            color: #042d63;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators Example</h1>
+
+    
+        <div>
+            <p>This paragraph is a descendant of div and is styled (descendent).</p>
+            <section>
+                <p>This nested paragraph is also a descendant and is styled(still descendent).</p>
+            </section>
+        </div>
+        <p>This paragraph is a direct child of section and is also styled.(child)</p>
+    </section>
+
+    
+        <h2>Section Heading</h2>
+        
+            <p>This paragraph is a direct child of div and is styled(adjacent sibling).</p>
+            
+                <p>This paragraph is NOT a direct child of div and is not styled.(general sibling)</p>
+        
+
+    
+</body>
+</html>

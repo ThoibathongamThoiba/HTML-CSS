@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Web Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 32px;
+        }
+        h1::after {
+            content: " 🚀";
+            color: #23c643;
+        }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ec8dcc;
+        }
+        a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e515a0;
+            transition: width .3s;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        ul li::marker {
+            color: #4638c5;
+        }
+        button {
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition:  0.2s;
+        }
+        button:hover {
+            background: #d798db;
+        }
+        button:active {
+            background: #edbb15;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo Web Example</h1>
+        <p>
+            This page demonstrates the use of CSS pseudo-classes and pseudo-elements for a modern web look.
+        </p>
+        <ul>
+            <li>Hover over <a href="#">this link</a> to see the effect.</li>
+            <li>Click the button for active state.</li>
+            <li>Check out the custom list marker.</li>
+        </ul>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>

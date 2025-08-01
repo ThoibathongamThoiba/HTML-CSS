@@ -1,0 +1,25 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.name {
+    color: rgb(227, 227, 235);
+    background-color: rgb(16, 16, 138);
+    padding: 10px;
+}
+.hex {
+    background-color: rgb(11, 107, 75);
+    color: azure;
+    padding: 10px;
+}
+
+.rgb {
+    color: rgb(120, 10, 10);
+}
+
+.rgba {
+    color: rgb(74, 5, 139);
+}
+
+.hsl {
+    color: rgb(5, 125, 129);
+}

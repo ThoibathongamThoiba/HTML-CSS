@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Navigation Bar Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background: #222;
+            overflow-x:auto;
+            white-space:nowrap ;
+            min-height: auto;
+        }
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 24px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #444;
+        }
+        @media (max-width:0px) {
+            nav a {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+        }
+        .logo {
+            color: aliceblue;
+        }
+        h1::before {
+            content:"✨ Welcome To My Website";
+            color: #fff;
+            font-size: 1.2em;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+           <h1> <div class="logo"></div></h1>
+        
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Team</a>
+        <a href="#">Careers</a>
+    
+        </div>
+    </nav>
+    
+</body>
+</html>

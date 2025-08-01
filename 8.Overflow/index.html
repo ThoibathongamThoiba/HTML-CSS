@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            background-color: aliceblue;
+
+
+        }
+        .visible{
+            overflow: visible;
+        }
+
+        .hidden{
+            overflow: hidden;
+        }
+
+        .scroll{
+            overflow: scroll;
+        }
+
+        .auto{
+            overflow: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Overflow Example</h1>
+
+    <div class="box visible">
+        <strong>Visible:</strong>This is some long content that will overflow the box.     </div>
+
+    <div class="box hidden">
+        <strong>Hidden:</strong>This is some content that will overflow the box.  </div>
+
+  <div class="box scroll"> 
+    <strong>Scroll:</strong>This is a some long content that will overflow the box.  </div>
+
+    <div class="box auto">
+    
+    <strong>Auto:</strong>This is a some long content that will overflow the box.
+    Scrollbars will appear only if necessary
+</div>
+</body>
+</html>
