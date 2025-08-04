@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background-image: url(https://tse2.mm.bing.net/th/id/OIP.q6wfe_W2DT8D4Lz8ScqNMgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3);
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background:black;
+            color: #9b98b3;
+        }
+        header {
+            background: rgb(20, 18, 18);
+            color: rgb(232, 237, 233);
+            padding: 1rem;
+            text-align:center;
+            animation: fade 3s ease;
+        }
+
+        @keyframes fade {
+            from {opacity:0; transform: translateY(-40px);}
+            to {opacity: 1; transform:translateY(0);}
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            padding: 1rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: #e1dcdc;
+        }
+        nav {
+            background: #201f22;
+            text-align: center;
+            padding: 2rem 0;
+            animation: in 2s ease;
+        }
+        @keyframes in {
+            from{opacity: 0;transform: translateY(-40);}
+            to {opacity:1;transform: translateY(0);}
+        }
+        nav a {
+            color: #0fee1a;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:x-large;
+            filter: drop-shadow(1px 1px 20px green);
+        }
+        nav a:hover {
+            color: #d7dfe4;
+        }
+        .container {
+        max-width: 900px;
+        color: #f2efef;
+            margin: 2rem auto;
+            background: #1e1e20;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        section {
+            margin-bottom: 2rem;
+            box-shadow: 1px 1px 20px rgb(32, 245, 32);
+            animation: down 20s ease;
+        }
+        @keyframes down {
+            from {opacity:0; transform: translateY(-40px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        h2 {
+            color: #00bcd4;
+            margin-bottom: 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            
+        }
+        
+        .project {
+            background: #1a1a1c;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            transition: transform 0.2s;
+            box-shadow: 1px 1px 20px rgb(9, 237, 9);
+        }
+        .project:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #bab6b6;
+        }
+        .project p {
+            color: whitesmoke;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8rem;
+        
+            
+        }
+        
+        .skills-list span {
+            background: #05f529;
+            color: #f8f8f8;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 1.3rem;
+            box-shadow:#0fee1a;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #181720;
+            color:rgb(7, 233, 7);
+            margin-top: 5rem;
+            box-shadow: 1px 1px 20px rgb(32, 253, 32);
+            animation: on 30s ease;
+        }
+        @keyframes on {
+            from {opacity: 0; transform: translateY(-40px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+          img{
+            border-radius: 500px;
+          }
+           
+
+            .image {
+                
+                margin-bottom: 40px;
+                letter-spacing: 2px;
+                animation:fadeInDown 5s ease-in-out ;
+              filter: drop-shadow(1px 1px 20px rgb(14, 232, 6));
+                 padding: 0 15px;
+                
+                 
+            }
+            
+
+
+            @keyframes fadeInDown {
+                from {opacity:0; transform: translateY(-40px);}
+                to {opacity: 1; transform: translateY(0);}
+            }
+        
+            </style>
+    
+           
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#service">Service</a>
+    </nav>
+    <header>
+         <h1>Thongam Tama</h1>
+        
+            <div class="image">
+                <img src="image.jpg" width="250px" />
+ <p> Resolving design problems,building smart user</p>
+   <p>Interface and useful interaction,developing rich web</p>   
+<p>application and seamless web experiences.</p>      </div>
+
+      <h2 class="title">Frontend Developer</h2>  
+      
+       
+       <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+       <a href="#"><i class="fa-brands fa-github"></i></a>
+      
+      
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm <span>Thongam Tama</span>,<strong> building web apps by using HTML and CSS. 
+                     I liketo craft solid frontend products with great user experiences. 
+                     I love turning ideas into reality using code and design. 
+                    </strong>
+            </p>
+        </section>
+        </div>
+        <div class="container">
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my work and skills. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="#link" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Book Reading Plateform</h3>
+                    <p>A digital sevice that provides access to a wide range of books,for reading with HtML and CSS</p>
+                                     <a href="#link" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>E-commerce Store</h3>
+                    <p>An online store with shopping cart and payment integration. Built with HTML and CSS.</p>
+                    <a href="#link" target="_blank">View Project</a>
+                </div>
+                </div>
+        </section>
+        </div>
+        <div class="container">
+        <section id="skills">
+            <h2>Skills:</h2>
+            <div class="skill-list">
+        <strong>HTML   :    </strong> <img src="https://tse3.mm.bing.net/th/id/OIP.gXi6fGKReovWKXweUEBNqQHaHa?pid=Api&P=0&h=180" alt="" width="100px" />
+            <strong>CSS  :  </strong>  <img src="https://tse1.mm.bing.net/th/id/OIP.fuuo-UQGaeRzL9wDDAlZIwHaHa?pid=Api&P=0&h=180" alt="" width="100px" />
+        <strong>JavaScript  :  </strong> <img src="https://tse3.mm.bing.net/th/id/OIP.yOH1mL7-SXE3AruSanjeswHaHa?pid=Api&P=0&h=180" alt="" width="100px" />
+         <strong>nodeJS</strong>  <img src="https://tse4.mm.bing.net/th/id/OIP.YKpu8VyhHzhq6dPnsJRbHAHaHa?pid=Api&P=0&h=180" alt="" width="100px" />
+         <strong>React</strong> <img src="https://tse2.mm.bing.net/th/id/OIP.8pffzYs-khXuhi8jLVydEwHaHa?pid=Api&P=0&h=180" alt="" width="100px"/>
+         </div>
+        </section>
+        </div>
+        <div class="container">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="#link">thoibathongamthoiba@gmail.com</a></p>
+            <p>LinkedIn: <a href="#link" target="_blank">linkedin.com/in/Thongam Tama</a></p>
+            <p>GitHub: <a href="#"  >github.com/Thongam Tama</a></p>
+
+        </section>
+        </div>
+        <div class="container">
+            <section id="service">
+                <h2>Service</h2>
+                <p>Frontend Developer</p>
+                <img src="html-css-collage-concept-with-person.jpg" alt="" width="400px" height="250px">
+                <img src="farzad-p-xSl33Wxyc-unsplash.jpg" alt="" width="400px" height="250px">
+                <img src="nubelson-fernandes-jKL2PvKN8Q0-unsplash.jpg" alt="" width="400px" height="250px">
+                <img src="programming-background-with-person-working-with-codes-computer (1).jpg" alt="" width="400px" height="250px">
+                
+                
+               
+           
+
+            </section>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025  Thongam Tama. Optivoxx Technologies
+    </footer>
+</body>
+</html>
